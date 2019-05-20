@@ -1,6 +1,6 @@
-// array of sturcure
-
+#include <stdio.h>
 # define MAX 50
+
 
 struct Contact
 {
@@ -8,6 +8,11 @@ struct Contact
     char PhoneNumber[13];
 };
 
-struct Contact PhoneBook[MAX];
+extern struct Contact PhoneBook[MAX];
 
-int size;  // store the actual numbers of PhoneBook
+void registerPhoneData();
+void printAll();
+void searchByName();
+void deleteByName();
+
+extern int size;  // store the actual numbers of PhoneBook
